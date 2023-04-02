@@ -5,19 +5,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    // border: 1px solid red;
 }
 
 
-// VARIABLES
+// VARIABLES - COLORS
 $primary-color: #444;
 $text-color:#fff;
-$main-width:16rem;
-$main-height:18rem;
+$color-sec: #04fc43;
+$color-min: #fee800;
+$color-hr: #ff2972; 
+
+//  VARIABLES - UTILITIES
+$main-width:17rem;
+$main-height:20rem;
 $linear: linear-gradient(180deg,#222, #555);
 $linear-secondary: linear-gradient(80deg,#777, #555);
 
 
-// SHADOWS
+//  VARIABLES - SHADOWS
 $shadow-color:#111;
 $shadow:0px 0px 3px 4px $shadow-color;
 $clockShadow:0px 0px 1px 3px $shadow-color;
@@ -41,29 +47,9 @@ $clockShadow:0px 0px 1px 3px $shadow-color;
 
 
 // FUNCTIONS
-// $degrees: (180, 90, 45);
-// @each $degree in $degrees{
-    
-//     $linear(#{$degree}){
-//         linear-gradient(#{degree},#111, #555);
-//     }
-    
-// }
 
+$degree: 30;
 
-
-
-
-
-// h1 {
-//    color: #04fc43; 
-// }
-
-// h2 {
-//     color: #fee800; 
-// }
-
-// h3 {
-//     color: #ff2972; 
-// }
-// $primary-color: #333;
+@function degrees($num){
+    @return ($num * $degree);
+}
