@@ -14,9 +14,9 @@
         <div class="clock__face">
 
             <!-- clock hands start -->
-            <div class="sec hand"> <span class="inner-hand"></span></div>
-            <div class="min hand"> <span class="inner-hand"></span></div>
-            <div class="hr hand"> <span class="inner-hand"></span></div>
+            <div class="sec hand"> <span id="sec-hand" class="inner-hand"></span></div>
+            <div class="min hand"> <span id="min-hand" class="inner-hand"></span></div>
+            <div class="hr hand"> <span id="hr-hand" class="inner-hand"></span></div>
             <!-- clock hands end -->
 
             <span id="1" class="clock__4">4</span>
@@ -33,7 +33,14 @@
             <span id="12" class="clock__3">3</span>
             
         </div>
-        <div class="clock__currentTime"></div>
+        <div class="clock__currentTime">
+            <span id="hr"></span>
+            <span id="blink">:</span>
+            <span id="min"></span>
+            <span id="blink-2">:</span>
+            <span id="sec"></span>
+            <span id="isAM"></span>
+        </div>
     </div>
     <!-- Digital CLock end -->
     <script src="./js/animatedClock.js"></script>
