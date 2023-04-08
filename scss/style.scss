@@ -59,7 +59,7 @@ body{
             height: 52px;
             background: #323232;
             border: 2px solid inherit;
-            z-index: -1;
+            z-index: -3;
             @include positionAbsolute;
             transform: translateY(2px) translateX(-2px) rotate(190deg);
             transform-origin: top center;
@@ -95,7 +95,7 @@ body{
             height: 65px;
             background: #323232;
             border: 2px solid inherit;
-            z-index: -1;
+            z-index: -2;
             @include positionAbsolute;
             transform: translateY(-1px) translateX(-3px) rotate(20deg);
             transform-origin: top center;

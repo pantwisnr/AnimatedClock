@@ -25,7 +25,7 @@ setInterval(() => {
     let minAngle = (myDate.getMinutes() * 6) + 180;
     minHand.style.transform = `translateY(-1px) translateX(-3px) rotate(${minAngle}deg)`;
 
-    let hrAngle = (myDate.getHours() * 30) + 180;
+    let hrAngle = (myDate.getHours() * 30) + 190;
     hrHand.style.transform = `translateY(-1px) translateX(-3px) rotate(${hrAngle}deg)`;
 
 
